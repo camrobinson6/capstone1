@@ -8,24 +8,17 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+		<div class="enjoy-css">HONEY DO LIST</div>
+		<link async href="http://fonts.googleapis.com/css?family=VT323" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
+		<br>
+		<br>
+
 	<h1>"Looking for Suggestions"</h1>
 	<div id="honeyButton" class="buttonBox"> 
-		<button>Honey Do Suggestions</button>
-		<button id="getParamSubmit" class="buttonBox">Honey Do Ideas</button>
+		<button>Honey Do Ideas</button>
   </div>
-
-
-
-
-<br>
-<br>
-
-	<div class="enjoy-css">HONEY DO LIST</div>
-	<link async href="http://fonts.googleapis.com/css?family=VT323" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-
-
-	
-
+  <button id="getParamSubmit">Honey Do Suggestions</button>
 <br>
 <br>
 <a href="https://pixabay.com/">
@@ -33,13 +26,15 @@
 </a>
 <br>
 <br>
-<h1>"Honey-do list"</h1>
+<h2>"What is a Honey-do list?"</h2>
 	
 	<p>
-		<span> List or collection of tasks or jobs one has been requested to perform or undertake, especially household duties or jobs, given to a person by their spouse or romantic partner. It is a pun on "honeydew" (a fruit), with "honey" referring to a common term of endearment, and "do" referring to a "to-do list."
-	All I want to do on the weekends is relax, but my wife always has some honey-do list for me.</span>
+	<span> List or collection of tasks or jobs one has been requested to perform or undertake, 
+	<br>   especially household duties or jobs, given to a person by their spouse or romantic partner. 
+	<br>It is a pun on "honeydew" (a fruit), with "honey" referring to a common term of endearment, and "do" referring to a "to-do list."
+    <br>All I want to do on the weekends is relax, but my wife always has some honey-do list for me.</span>
 </p>
-
+<br>
 		<div class="row">
 			<div class="helpText col-12">
 				<p id="first">When you enter text into the input field it adds items to your list.</p>
@@ -62,8 +57,10 @@
 				</ul>
 			</div>
 		</div>
+		<script type="text/javascript" src="script_method3.js"></script>
 
-	</div>
+<br>
+<br>
 
 	<a href="https://pixabay.com/">
 		<img alt="mancleaning" src="images/man cleaning.jpg" style="float:right; width:500px; height:400px;">
@@ -72,10 +69,13 @@
 	<a href="https://pixabay.com/">
 		<img alt="mancleaning" src="images/cleaningceiling.jpg" style="float:left; width:500px; height:400px;" >
 		
+	
+	
+	
+	
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="index.js"></script>
 
-		
 	<script>
 		document.getElementById("honeyButton").onclick = function () {
 		  axios.get("http://localhost:4000/api/honey/")
@@ -87,14 +87,6 @@
 		
 		
 	</script>
-	<br>
-	<br>
-
-	
-	
-
-
-
-  
+	<footer>Capstone by Cameron Robinson</footer>
 </body>
 </html>

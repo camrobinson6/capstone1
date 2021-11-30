@@ -2,14 +2,11 @@ const enterButton = document.getElementById("enter");
 const input = document.getElementById("userInput");
 const ul = document.querySelector("ul");
 const item = document.getElementsByTagName("li");
-
 const getHelp = document.getElementById('getHelp')
-
-
-
 const baseURL =  `http://localhost:4000/api/honey`
 
-jQuery("h1").fitText(0.38);
+const getQuerySubmit = document.getElementById('getQuerySubmit')
+
 
 function inputLength(){
 	return input.value.length;
@@ -26,8 +23,7 @@ function createListElement() {
 	input.value = ""; //Reset text input field
 
 
-	//START STRIKETHROUGH
-	// because it's in the function, it only adds it for new items
+	
 	function crossOut() {
 		li.classList.toggle("done");
 	}
@@ -53,14 +49,13 @@ function createListElement() {
 
 
 function addListAfterClick(){
-	if (inputLength() > 0) { //makes sure that an empty input field doesn't create a li
+	if (inputLength() > 0) {
 		createListElement();
 	}
 }
 
 function addListAfterKeypress(event) {
-	if (inputLength() > 0 && event.which ===13) { //this now looks to see if you hit "enter"/"return"
-		//the 13 is the enter key's keycode, this could also be display by event.keyCode === 13
+	if (inputLength() > 0 && event.which ===13) { 
 		createListElement();
 	} 
 }
@@ -78,33 +73,12 @@ getParamSubmit.addEventListener('click', () => {
 
 
 
-
-
-  
-
-
-
-
 getQuerySubmit.addEventListener('click', () => {
     axios
-   .delete(`http://localhost:4000/api/help/:message`)
+   .delete(`http://localhost:4000/api/honey`)
    .then(res => displayRes([res.data]))
    
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 enterButton.addEventListener("click",addListAfterClick);
 

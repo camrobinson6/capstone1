@@ -54,7 +54,7 @@ h1 {
 
 h2 {
 	
-	color:rgb(235, 33, 100);
+	color:rgb(105, 31, 201);
 	text-transform: uppercase;
 	font-weight: 400;
 	font-family: fantasy;
@@ -87,8 +87,8 @@ p {
 	border: none;
 	padding: 5px 15px;
 	border-radius: 5px;
-	color: rgb(150, 230, 21);
-	background-color:rgb(224, 211, 24);
+	color:  #8ce6f8;
+	background-color:#0a0c0c;
 	transition: all 0.75s ease;
 	-webkit-transition: all 0.75s ease;
 	-moz-transition: all 0.75s ease;
@@ -189,7 +189,7 @@ span {
 
 
 
-
+/* 
 .buttonBox{
 	display: flexbox;
-}
+} */

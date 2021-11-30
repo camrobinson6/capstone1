@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Capstone Project Week 1-8</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>"Looking for Suggestions"</h1>
+	<div id="honeyButton" class="buttonBox"> 
+		<button>Honey Do Suggestions</button>
+		<button id="getParamSubmit" class="buttonBox">Honey Do Ideas</button>
+  </div>
+
+
+
+
+<br>
+<br>
+
+	<div class="enjoy-css">HONEY DO LIST</div>
+	<link async href="http://fonts.googleapis.com/css?family=VT323" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
+
+	
+
+<br>
+<br>
+<a href="https://pixabay.com/">
+	<img alt="queen-bee" src="images/queen-bee.webp">
+</a>
+<br>
+<br>
+<h1>"Honey-do list"</h1>
+	
+	<p>
+		<span> List or collection of tasks or jobs one has been requested to perform or undertake, especially household duties or jobs, given to a person by their spouse or romantic partner. It is a pun on "honeydew" (a fruit), with "honey" referring to a common term of endearment, and "do" referring to a "to-do list."
+	All I want to do on the weekends is relax, but my wife always has some honey-do list for me.</span>
+</p>
+
+		<div class="row">
+			<div class="helpText col-12">
+				<p id="first">When you enter text into the input field it adds items to your list.</p>
+				<p id="second">Click the item to mark it as complete.</p>
+				<p id="third">To remove item, click the "X" and its removed.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<input id="userInput" type="text" placeholder="Add new item here" maxlength="27">
+				<button id="enter"><i class="fas fa-pencil-alt"></i></button>
+			</div>
+		</div>
+<br>
+
+	<div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<a href="https://pixabay.com/">
+		<img alt="mancleaning" src="images/man cleaning.jpg" style="float:right; width:500px; height:400px;">
+	</a>
+	<br>
+	<a href="https://pixabay.com/">
+		<img alt="mancleaning" src="images/cleaningceiling.jpg" style="float:left; width:500px; height:400px;" >
+		
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="index.js"></script>
+
+		
+	<script>
+		document.getElementById("honeyButton").onclick = function () {
+		  axios.get("http://localhost:4000/api/honey/")
+			  .then(function (response) {
+				const data = response.data;
+				alert(data);
+			  });
+		};
+		
+		
+	</script>
+	<br>
+	<br>
+
+	
+	
+
+
+
+  
+</body>
+</html>

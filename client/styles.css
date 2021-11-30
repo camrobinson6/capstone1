@@ -1,0 +1,195 @@
+
+.enjoy-css {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    font: normal 70px/1 "VT323", Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-shadow: 0 0 9px 4px rgb(204, 228, 70) ;
+    box-shadow: 0 0 9px 4px rgb(200, 216, 52) ;
+    text-shadow: 5px 5px 0 rgba(255,255,0,0.7) ;
+  }
+
+
+
+
+
+
+img {
+    border: 15px double rgb(20, 17, 20)
+    
+}
+
+
+
+
+body {
+	background:lightcyan;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+	margin: 30px 0px;
+	font-weight: bold;
+}
+
+h1 {
+	color:rgb(1, 12, 12);
+	text-transform: uppercase;
+	font-weight: 400;
+	text-emphasis: dot;
+	@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+	text-align: center;
+	font-family: 'Bowlby One SC', cursive;
+	
+}
+
+h2 {
+	
+	color:rgb(235, 33, 100);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: fantasy;
+}
+
+
+
+p {
+	font-weight: 600;
+}
+
+#first {
+	margin-top: 10px;
+	color: #9b0e8f;
+	
+}
+
+#second {
+	color: #51DF70;
+
+}
+
+#third {
+	color: #e41717;
+	margin-bottom: 30px;
+}
+
+
+#enter {
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: rgb(150, 230, 21);
+	background-color:rgb(224, 211, 24);
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+	background:lightsalmon;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+}
+
+
+
+button{
+	color:black;
+	background:hotpink;
+	font-size:30px;
+}
+
+
+#honeyButton>button{
+	border:4px solid rgb(10, 4, 4);
+	transition:all .5s ease-in-out;
+	
+  }
+  
+  #honeyButton:hover button{
+	border:1px solid rgb(92, 226, 59);
+	font-size:20px;
+  }
+
+
+
+span {
+	font-size: large;
+	color:hotpink;
+	font-style: italic;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
+
+
+
+
+
+.buttonBox{
+	display: flexbox;
+}

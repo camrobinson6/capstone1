@@ -61,6 +61,15 @@ function addListAfterKeypress(event) {
 }
 
 
+
+
+enterButton.addEventListener("click",addListAfterClick);
+
+input.addEventListener("keypress", addListAfterKeypress);
+
+
+
+
 getParamSubmit.addEventListener('click', () => {
  
     let paramInput2 = window.prompt('Write good honey do suggestion for others to think about.')
@@ -79,7 +88,3 @@ getQuerySubmit.addEventListener('click', () => {
    .then(res => displayRes([res.data]))
    
 });
-
-enterButton.addEventListener("click",addListAfterClick);
-
-input.addEventListener("keypress", addListAfterKeypress);

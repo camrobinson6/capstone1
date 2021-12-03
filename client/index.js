@@ -5,6 +5,7 @@ const item = document.getElementsByTagName("li");
 const getHelp = document.getElementById('getHelp')
 const baseURL =  `http://localhost:4000/api/honey`
 
+const getParamSubmit = document.getElementById('getParamSubmit')
 const getQuerySubmit = document.getElementById('getQuerySubmit')
 
 
